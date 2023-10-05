@@ -35,7 +35,7 @@ const registerCommunicationUserForOneSignal = async (communicationUserToken) => 
             oneSignalAppId: clientConfig.oneSignalAppId
         })
     }).then((response) => { return response.data });
-    oneSignalRegistrationTokenToCommunicationUserTokenMap.set(oneSignalRegistrationTokenGUID, communicationUserToken);
+    oneSignalRegistrationTokenToCommunicationUserTokenMap.set(oneSignalRegistrationToken, communicationUserToken);
     return oneSignalRegistrationToken;
 }
 
